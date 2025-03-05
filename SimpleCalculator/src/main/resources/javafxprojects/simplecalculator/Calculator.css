@@ -1,0 +1,63 @@
+/* ========== Root Container ========== */
+/* If your FXML has an AnchorPane with fx:id="rootPane", you can style it by ID: */
+#rootPane {
+    -fx-background-color: #1C1C1C; /* Dark background */
+}
+
+/* ========== Display (TextField) ========== */
+/* If your FXML has a TextField with fx:id="display", style it by ID: */
+#outputTextfield {
+    -fx-font-size: 36px;
+    -fx-text-fill: #FFFFFF;      /* White text */
+    -fx-background-color: #1C1C1C;
+    -fx-border-color: #2D2D2D;   /* Subtle border */
+    -fx-border-width: 2;
+    -fx-padding: 10;
+}
+
+/* ========== Buttons ========== */
+/* If your FXML uses <Button fx:id="btn1">, etc., style them by ID or use style classes. */
+
+/* 1) Styling by shared style class (preferred if you can add styleClass to your FXML) */
+.button-common {
+    -fx-background-radius: 10;
+    -fx-font-size: 18px;
+    -fx-text-fill: #FFFFFF;     /* White text */
+    -fx-pref-width: 60;         /* Adjust to your layout */
+    -fx-pref-height: 60;
+    -fx-background-color: #333333;  /* Dark gray background */
+}
+
+/* 2) Operator buttons (if you can assign them a style class in FXML) */
+.button-operator {
+    -fx-font-size: 18px;
+    -fx-background-color: #FF9500;  /* Orange for operators */
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-pref-width: 60;         /* Adjust to your layout */
+    -fx-pref-height: 60;
+}
+
+/* 3) Special buttons (AC, +/- etc.) */
+.button-special {
+    -fx-font-size: 18px;
+    -fx-background-color: #A6A6A6;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-pref-width: 60;         /* Adjust to your layout */
+    -fx-pref-height: 60;
+}
+
+/* If you cannot use style classes, you can style them by ID, for example: */
+/*
+#btn1, #btn2, #btn3, #btn4, #btn5, #btn6, #btn7, #btn8, #btn9, #btn0 {
+    -fx-background-color: #333333;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 18px;
+    -fx-background-radius: 10;
+}
+#btnPlus, #btnMinus, #btnMultiply, #btnDivide, #btnEquals {
+    -fx-background-color: #FF9500;
+    -fx-text-fill: #FFFFFF;
+}
+*/
