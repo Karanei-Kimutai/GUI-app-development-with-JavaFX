@@ -1,0 +1,57 @@
+/* Root container for the View Tasks page */
+.view-tasks-root {
+    -fx-background-color: #121212; /* Dark background */
+    -fx-padding: 30;
+    -fx-alignment: center;
+}
+
+/* Title label ("TO DO LIST") */
+.title-label {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-underline: true;
+}
+
+/* The ListView displaying tasks */
+.tasks-list-view {
+    -fx-border-color: #444444;  /* Subtle border */
+    -fx-border-width: 1;
+    -fx-padding: 5;
+    -fx-background-color: #121212;
+    -fx-text-fill: #FFFFFF;        /* White text for list items */
+}
+
+/* Text field for editing selected task */
+.edit-field {
+    -fx-pref-width: 300;
+    -fx-font-size: 14px;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #2A2A2A;
+    -fx-background-radius: 6;
+    -fx-padding: 8;
+    -fx-border-color: #2A2A2A;
+    -fx-border-radius: 6;
+}
+
+/* Base button styling */
+.button {
+    -fx-font-size: 14px;
+    -fx-padding: 8 16;
+    -fx-background-radius: 8;
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-cursor: hand;
+}
+
+/* Specific buttons on the View Tasks page */
+.btn-edit,
+.btn-delete,
+.btn-done,
+.btn-back {
+    -fx-background-color: #1A73E8; /* Blue button */
+}
+
+/* Optional hover effect */
+.button:hover {
+    -fx-opacity: 0.85;
+}

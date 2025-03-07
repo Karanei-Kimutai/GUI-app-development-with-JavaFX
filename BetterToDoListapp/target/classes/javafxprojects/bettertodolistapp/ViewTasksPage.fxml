@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" styleClass="view-tasks-root" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxprojects.bettertodolistapp.ViewTasksPageController">
+
+    <Label styleClass="title-label" text="TO DO LIST" />
+
+    <ListView fx:id="tasksListView" prefHeight="300.0" prefWidth="400" style="-fx-background-color: black;" styleClass="tasks-list-view" />
+
+    <TextField fx:id="editField" promptText="Edit selected task name" styleClass="edit-field" />
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button onAction="#handleEditTask" styleClass="btn-edit" text="Edit Task" />
+        <Button onAction="#handleDeleteTask" styleClass="btn-delete" text="Delete Task" />
+        <Button onAction="#handleMarkDone" styleClass="btn-done" text="Mark Done" />
+    </HBox>
+
+    <Button onAction="#handleGoBack" styleClass="btn-back" text="Go Back" />
+</VBox>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="477.0" prefWidth="479.0" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxprojects.simpletodolistapp.ToDoListController">
+    <padding>
+        <Insets bottom="15" left="15" right="15" top="15" />
+    </padding>
+
+    <!-- TextField for entering a new task or editing a selected task -->
+    <TextField fx:id="newTaskfield" prefHeight="82.0" prefWidth="430.0" promptText="Enter new task" />
+
+    <!-- Button to add a new task -->
+    <Button onAction="#handleAddtask" text="Add Task" />
+
+    <!-- ListView to display tasks -->
+    <ListView fx:id="todoListview" prefHeight="200" prefWidth="300" />
+
+    <!-- HBox containing Edit and Delete buttons -->
+    <HBox alignment="CENTER" spacing="10">
+        <Button onAction="#handleEdittask" text="Edit Task" />
+        <Button onAction="#handleDeletetask" text="Delete Task" />
+    </HBox>
+</VBox>
